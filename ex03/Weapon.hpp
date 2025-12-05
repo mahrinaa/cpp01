@@ -1,35 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/05 03:19:41 by mai               #+#    #+#             */
-/*   Updated: 2025/12/05 21:24:17 by mai              ###   ########.fr       */
+/*   Created: 2025/12/05 20:31:40 by mai               #+#    #+#             */
+/*   Updated: 2025/12/05 21:23:52 by mai              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
+#ifndef WEAPON_HPP
+# define WEAPON_HPP
 
 # include <iostream>
 # include <string>
 
-class Zombie
+class Weapon
 {
 private:
-	std::string _name;
+	std::string _type;
 
 public:
-	Zombie();
-	~Zombie();
+	Weapon();
+	~Weapon();
+	
+	//methode doit renvoyer une ref constante et non une copie
+	//evite une copie inutile(performance)
+	//empecher la modif de l arme via get type
+	//l/appelant ne peut pas modifier _type
+	const std::string& getType() const; 
 
-	void announce(void) const;
-	void newName(const std::string name);
-
+	// setType modifie _type (l'arme)
+	//ce qui met automatiquement à jour l’arme que possèdent HumanA et HumanB.
+	void	setType(std::string type); 
 };
-
-Zombie* zombieHorde(int N, std::string name);
 
 #endif

@@ -6,13 +6,13 @@
 /*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 20:47:17 by mai               #+#    #+#             */
-/*   Updated: 2025/12/05 20:58:46 by mai              ###   ########.fr       */
+/*   Updated: 2025/12/05 23:23:58 by mai              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-Weapon::Weapon()
+Weapon::Weapon(std::string type) : _type(type)
 {
 
 }

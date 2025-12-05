@@ -6,7 +6,7 @@
 /*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 03:19:41 by mai               #+#    #+#             */
-/*   Updated: 2025/12/05 03:52:59 by mai              ###   ########.fr       */
+/*   Updated: 2025/12/05 15:17:36 by mai              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ public:
 	~Zombie();
 
 	void announce(void) const;
-	void setName(const std::string name);
+	void newName(const std::string name);
 
 };
 

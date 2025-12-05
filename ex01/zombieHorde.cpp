@@ -6,7 +6,7 @@
 /*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 03:20:10 by mai               #+#    #+#             */
-/*   Updated: 2025/12/05 04:00:36 by mai              ###   ########.fr       */
+/*   Updated: 2025/12/05 15:17:36 by mai              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ Zombie* zombieHorde(int N, std::string name)
 	Zombie *horde = new Zombie[N];
 
 	for (int i = 0; i < N; i++) // initialisation de chaque zombie
-		horde[i].setName(name);
+		horde[i].newName(name);
 	return (horde);
 }

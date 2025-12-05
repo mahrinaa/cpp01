@@ -6,7 +6,7 @@
 /*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 03:19:25 by mai               #+#    #+#             */
-/*   Updated: 2025/12/05 04:09:30 by mai              ###   ########.fr       */
+/*   Updated: 2025/12/05 15:18:57 by mai              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,9 +62,9 @@ void testNegativeNumber()
 
 void testLargeHorde()
 {
-    std::cout << "\n=== Test grande horde : 1000 zombies ===" << std::endl;
+    std::cout << "\n=== Test grande horde :10 zombies ===" << std::endl;
 
-    Zombie* horde = zombieHorde(1000, "MegaZombie");
+    Zombie* horde = zombieHorde(10, "MegaZombie");
 
     // On affiche juste les 3 premiers pour éviter le spam
     horde[0].announce();

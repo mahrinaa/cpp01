@@ -1,4 +1,4 @@
-NAME = losers
+NAME = sed
 SRC = main.cpp Sed.cpp
 	
 OBJECTS = $(SRC:.cpp=.o)

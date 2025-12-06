@@ -6,7 +6,7 @@
 /*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 23:53:24 by mai               #+#    #+#             */
-/*   Updated: 2025/12/05 23:54:50 by mai              ###   ########.fr       */
+/*   Updated: 2025/12/06 03:11:04 by mai              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ std::string Sed::_replaceAll(const std::string &line) const
     }
 
     result.append(line, pos); // append the end of line
-    return result;
+    return (result);
 }
 
 // --------------------------------------------------------------
@@ -69,7 +69,7 @@ int Sed::process()
     if (!_ifs.is_open())
     {
         std::cout << "Error: cannot open input file: " << _inputFile << "\n";
-        return 0;
+        return (0);
     }
 
     // Try to open output file
@@ -94,8 +94,8 @@ int Sed::process()
     if (_ofs.fail())
     {
         std::cout << "Error: failed writing to output file.\n";
-        return 0;
+        return (0);
     }
 
-    return 1;
+    return (1);
 }

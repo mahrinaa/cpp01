@@ -6,7 +6,7 @@
 /*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/06 04:09:31 by mai               #+#    #+#             */
-/*   Updated: 2025/12/06 04:25:44 by mai              ###   ########.fr       */
+/*   Updated: 2025/12/06 04:31:41 by mai              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,16 @@
 int main(int argc, char **argv)
 {
 	Harl		message;
-	std::string	levels;
+	std::string	level;
 
 	if (argc != 2)
 	{
 		std::cout << "Need one paramater, please try again !" << std::endl;
 		return (1);
 	}
-	levels = argv[1];
-	if (levels == "DEBUG" || levels == "INFO" || levels == "WARNING" || levels == "ERROR")
-		message.complain(levels);
+	level = argv[1];
+	if (level == "DEBUG" || level == "INFO" || level == "WARNING" || level == "ERROR")
+		message.complain(level);
 	else
 	{
 		std::cout << "Enter one: <DEBUG> <INFO> <WARNING> <ERROR>" << std::endl;

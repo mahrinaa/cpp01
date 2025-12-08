@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: mapham <mapham@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/06 03:27:46 by mai               #+#    #+#             */
-/*   Updated: 2025/12/06 03:59:57 by mai              ###   ########.fr       */
+/*   Updated: 2025/12/08 22:53:21 by mapham           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ void	Harl::error()
 void	Harl::complain(std::string level)
 {
 	std::string param[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	
 	//tableau de string, tableau de pointeurs sur fonctions membres
 	//definir les niveaux possibles
 	void		(Harl::*level_ptr[4])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};

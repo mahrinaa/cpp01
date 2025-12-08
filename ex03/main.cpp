@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: mapham <mapham@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 23:09:01 by mai               #+#    #+#             */
-/*   Updated: 2025/12/05 23:17:18 by mai              ###   ########.fr       */
+/*   Updated: 2025/12/08 22:46:51 by mapham           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,14 @@
 int main()
 {
 	{
-		//creation d une arme
+		//Creation d une arme
 		Weapon club = Weapon("crude spiked club");
+		
 		//HumanA tjrs arme
 		HumanA bob("Bob", club);
 		bob.attack();
-		//change le type de l arme
+		
+		//Change le type de l arme
 		club.setType("some other type of club");
 		bob.attack();
 	}

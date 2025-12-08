@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: mapham <mapham@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/06 03:20:18 by mai               #+#    #+#             */
-/*   Updated: 2025/12/06 03:55:57 by mai              ###   ########.fr       */
+/*   Updated: 2025/12/08 22:53:35 by mapham           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ private:
 public:
 	Harl();
 	~Harl();
+	
 	//methode publique
 	//sert a selectionner et executer la bonne methode privee selon la string level
 	void	complain(std::string level);

@@ -3,19 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   zombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: mapham <mapham@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 03:20:10 by mai               #+#    #+#             */
-/*   Updated: 2025/12/05 15:17:36 by mai              ###   ########.fr       */
+/*   Updated: 2025/12/08 22:41:23 by mapham           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-/* On crée N objets Zombie d’un seul coup
+/* On cree N objets Zombie d’un seul coup
 Ils sont stockés sur la heap
-Le constructeur par défaut (Zombie::Zombie()) est appelé N fois
+Le constructeur par défaut (Zombie::Zombie()) est appele N fois
 La fonction reçoit un pointeur vers le premier Zombie */
+
 Zombie* zombieHorde(int N, std::string name)
 {
 	if (N <= 0)

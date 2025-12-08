@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: mapham <mapham@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 02:42:25 by mai               #+#    #+#             */
-/*   Updated: 2025/12/05 03:10:11 by mai              ###   ########.fr       */
+/*   Updated: 2025/12/08 22:39:00 by mapham           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,20 @@
 int main()
 {
 	std::cout << "_________________________________" << std::endl;
+	
+	//Cree un zombie dans la stack
 	randomChump("StackZombie");
 
 	std::cout << "_________________________________" << std::endl;
-	//cree un zombie dans la heap
+	
+	//Cree un zombie dans la heap
 	Zombie* heapZombie = newZombie("HeapZombie");
-	//annonce le zombie dans la heap
+	
+	//Annonce le zombie dans la heap
 	heapZombie->announce();
-	//delete le zombie de la heap
+	
+	//Delete le zombie de la heap
 	delete heapZombie;
-	//cree un zombie dans la stack
 
 	return (0);
 }

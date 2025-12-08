@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: mapham <mapham@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 16:24:57 by mai               #+#    #+#             */
-/*   Updated: 2025/12/05 17:09:55 by mai              ###   ########.fr       */
+/*   Updated: 2025/12/08 22:42:40 by mapham           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,16 @@
 
 int main()
 {
-	std::string	str; //declaration de la string
-	std::string* stringPTR; //declaration pointeur
+	std::string	str; 		//Declaration de la string
+	std::string* stringPTR; //Declaration pointeur
 
-	//initalisation
+	//Initalisation
 	str = "HI THIS IS BRAIN";
-	stringPTR = &str; //pointer stringPTR sur str
+	stringPTR = &str; 		//pointer stringPTR sur str
 	
-	//ref doit etre initialiser direct
-	//ref n est pas assignable
-	//doit representer un objet
-	//ne peut pas etre NULL
-	std::string&	stringREF = str; //ref doit etre initialiser direct
+/* 	ref doit etre initialiser direct, ref n est pas assignable
+	doit representer un objet, ne peut pas etre NULL */
+	std::string&	stringREF = str; 
 
 	//affichage des address 
 	std::cout << "Memory address of the string variable: " << &str 		 << std::endl;

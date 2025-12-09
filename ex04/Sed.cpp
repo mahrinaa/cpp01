@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Sed.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: mapham <mapham@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/05 23:53:24 by mai               #+#    #+#             */
-/*   Updated: 2025/12/09 04:18:51 by mai              ###   ########.fr       */
+/*   Created: 2025/12/09 16:05:50 by mapham            #+#    #+#             */
+/*   Updated: 2025/12/09 16:05:53 by mapham           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ int Sed::process()
     {
         _ofs << _replaceAll(line);
 
-        //Ajoute une newline except la derniere ligne
+        //Ajoute une newline sauf la derniere ligne
         if (!_ifs.eof())
             _ofs << '\n';
     }

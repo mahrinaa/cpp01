@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapham <mapham@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/05 22:43:44 by mai               #+#    #+#             */
-/*   Updated: 2025/12/08 22:43:14 by mapham           ###   ########.fr       */
+/*   Created: 2025/12/09 16:06:50 by mapham            #+#    #+#             */
+/*   Updated: 2025/12/09 16:06:58 by mapham           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,11 @@ HumanA::HumanA(std::string name, Weapon &weapon) : _name(name), _weapon(weapon)
 
 }
 
-//Destructeur
 HumanA::~HumanA()
 {
 
 }
 
-//Methode
 void	HumanA::attack(void) const
 {
 	std::cout << _name << " attacks with their " << _weapon.getType() << std::endl;

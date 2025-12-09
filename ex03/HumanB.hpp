@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapham <mapham@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/05 21:21:48 by mai               #+#    #+#             */
-/*   Updated: 2025/12/08 22:46:32 by mapham           ###   ########.fr       */
+/*   Created: 2025/12/09 16:06:21 by mapham            #+#    #+#             */
+/*   Updated: 2025/12/09 16:06:23 by mapham           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ doit attaquer uniquement s’il a une arme */
 class HumanB
 {
 private:
-	//nom de l humain
 	std::string _name; 
 	
 /* 	HumanB peut etre desarme donc utilse un pointeur
@@ -38,7 +37,7 @@ public:
 	void	attack(void) const; 
 
 /* 	ref en param car HumanB doit recevoir une arme existante, pas une copie.
-	l'adresse sera stocker dans _weapon */
+	l'adresse sera stockee dans _weapon */
 	void	setWeapon(Weapon &new_weapon);
 	
 };

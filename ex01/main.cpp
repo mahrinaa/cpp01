@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: mapham <mapham@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/05 03:19:25 by mai               #+#    #+#             */
-/*   Updated: 2025/12/05 15:18:57 by mai              ###   ########.fr       */
+/*   Created: 2025/12/09 16:07:45 by mapham            #+#    #+#             */
+/*   Updated: 2025/12/09 16:07:47 by mapham           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void testNormal()
 {
     std::cout << "\n=== Test normal : 5 zombies ===" << std::endl;
 
-    Zombie* horde = zombieHorde(5, "NormalZombie");
+    Zombie* horde = zombieHorde(5, "Normal");
 
     if (!horde)
     {
@@ -48,16 +48,16 @@ void testZeroZombies()
 
     Zombie* horde = zombieHorde(0, "NoZombie");
     if (horde == NULL)
-        std::cout << "Aucune horde créée (NULL) : OK" << std::endl;
+        std::cout << "Aucune horde cree (NULL) : OK" << std::endl;
 }
 
 void testNegativeNumber()
 {
-    std::cout << "\n=== Test N négatif ===" << std::endl;
+    std::cout << "\n=== Test N negatif ===" << std::endl;
 
     Zombie* horde = zombieHorde(-10, "ErrorZombie");
     if (horde == NULL)
-        std::cout << "Négatif → NULL : OK" << std::endl;
+        std::cout << "Negatif -> NULL : OK" << std::endl;
 }
 
 void testLargeHorde()
@@ -66,7 +66,7 @@ void testLargeHorde()
 
     Zombie* horde = zombieHorde(10, "MegaZombie");
 
-    // On affiche juste les 3 premiers pour éviter le spam
+    //Affiche juste les 3 premiers pour eviter le spam
     horde[0].announce();
     horde[1].announce();
     horde[2].announce();
@@ -84,6 +84,7 @@ int main()
 
     return 0;
 }
+
 /* int main(void)
 {
 	std::cout << "_____________________________________" << std::endl;
@@ -93,9 +94,11 @@ int main()
 
 	//creation horde de N zombie
 	Zombie* horde = zombieHorde(N, name);
+
 	//verifier si l'alloc est vide
 	if (!horde)
 		return (1);
+
 	//chaque zombie annonce son nom
 	for (int i = 0; i < N; i++)
 	{

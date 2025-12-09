@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapham <mapham@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/05 23:36:57 by mai               #+#    #+#             */
-/*   Updated: 2025/12/08 22:53:10 by mapham           ###   ########.fr       */
+/*   Created: 2025/12/09 16:05:42 by mapham            #+#    #+#             */
+/*   Updated: 2025/12/09 16:05:45 by mapham           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ class Sed
 private:
 	std::string		_inputFile;  //nom fichier source
 	std::string		_outputFile; //nom fichier .replace
-	std::string		_s1; 		//mot a remplacer
-	std::string		_s2; 		//mot de remplacement
+	std::string		_s1; 		 //mot a remplacer
+	std::string		_s2; 		 //mot de remplacement
 
 	std::ifstream	_ifs;	//lecture
 	std::ofstream 	_ofs; 	//ecriture

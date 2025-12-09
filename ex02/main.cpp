@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapham <mapham@student.42.fr>              +#+  +:+       +#+        */
+/*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 16:24:57 by mai               #+#    #+#             */
-/*   Updated: 2025/12/08 22:42:40 by mapham           ###   ########.fr       */
+/*   Updated: 2025/12/09 03:58:02 by mai              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main()
 	str = "HI THIS IS BRAIN";
 	stringPTR = &str; 		//pointer stringPTR sur str
 	
-/* 	ref doit etre initialiser direct, ref n est pas assignable
+	/*ref doit etre initialise direct, ref n est pas assignable
 	doit representer un objet, ne peut pas etre NULL */
 	std::string&	stringREF = str; 
 

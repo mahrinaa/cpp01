@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   Sed.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapham <mapham@student.42.fr>              +#+  +:+       +#+        */
+/*   By: mai <mai@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 23:53:24 by mai               #+#    #+#             */
-/*   Updated: 2025/12/08 22:52:42 by mapham           ###   ########.fr       */
+/*   Updated: 2025/12/09 04:18:51 by mai              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Sed.hpp"
 
-
+//Liste d'initialisation + creation du fichier de sortie .replace
 Sed::Sed(const std::string &filename, const std::string &s1, const std::string &s2)
     : _inputFile(filename), _s1(s1), _s2(s2)
 {
@@ -45,7 +45,7 @@ std::string Sed::_replaceAll(const std::string &line) const
     return (result);
 }
 
-
+//Gestion des fichiers + boucle principale 
 int Sed::process()
 {
     // Erreur si s1 vide
@@ -55,7 +55,7 @@ int Sed::process()
         return 0;
     }
 
-	//input file
+	//Ouvertue et fermeture des fichiers input/output
     _ifs.open(_inputFile.c_str());
     if (!_ifs.is_open())
     {
@@ -63,7 +63,6 @@ int Sed::process()
         return (0);
     }
 
-    //output file
     _ofs.open(_outputFile.c_str());
     if (!_ofs.is_open())
     {
